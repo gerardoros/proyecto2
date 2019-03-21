@@ -1,0 +1,29 @@
+<div class="card mt-4">
+  <div class="card-body">
+    <h6 class="text-center">Lista de alumnos</h6>
+    <table class="table table-sm table-hover">
+      <tbody>
+          <tr>
+              <th>Nombre</th>
+              <th>Semestre</th>
+              <th>Carrera</th>
+              <th>Opciones</th>
+            </tr>
+        <tr *ngFor="let alumno of alumnoList">
+          <td>{{alumno.nombre }}</td>
+          <td>{{alumno.semestre }}</td>
+          <td>{{alumno.carrera }}</td>
+          <td>
+            <a class="btn btn-secondary text-white" (click)="onEdit(alumno)">
+              <i class="far fa-edit"></i>
+            </a>
+            <a class="btn btn-danger text-white" (click)="onDelete(alumno.key)">
+              <i class="fas fa-trash"></i>
+              {{alumno.$key}}
+            </a>
+        </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
