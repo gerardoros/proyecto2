@@ -12,14 +12,28 @@ import { environment } from 'src/environments/environment';
 import { FormsModule} from '@angular/forms';
 import { AlumnosComponent } from './components/alumnos/alumnos.component';
 import { AlumnosListComponent } from './components/alumnos/alumnos-list/alumnos-list.component';
-import { AlumnoComponent } from './components/alumnos/alumno/alumno.component'
+import { AlumnoComponent } from './components/alumnos/alumno/alumno.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
+import { InicioComponent } from './components/inicio/inicio.component';
+import { SlayderComponent } from './components/slayder/slayder.component';
+import { DescripcionComponent } from './components/descripcion/descripcion.component';
+import { EjemplosComponent } from './components/ejemplos/ejemplos.component';
+import { GenerosComponent } from './components/generos/generos.component';
+import { ConocenosComponent } from './components/conocenos/conocenos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AlumnosComponent,
     AlumnosListComponent,
-    AlumnoComponent
+    AlumnoComponent,
+    ContactoComponent,
+    InicioComponent,
+    SlayderComponent,
+    DescripcionComponent,
+    EjemplosComponent,
+    GenerosComponent,
+    ConocenosComponent
   ],
   imports: [
     BrowserModule,

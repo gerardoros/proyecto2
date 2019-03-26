@@ -1,6 +1,47 @@
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<nav class="navbar navbar-dark bg-dark ">
+<nav class="navbar navbar-expand-lg navbar-light br">
+  <div class="log">
+  <a class="navbar-brand" href="#"  routerLink="/inicio">RE-MOV</a>
+ </div>
 
-  <a href="/" class="navbar-brand">Alumnos</a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+          <div class="cl">    <a class="nav-link" href="#" routerLink="/inicio">INICIO <span class="sr-only">(current)</span></a></div>
+      </li>
+      <li class="nav-item">
+        <div class="cl"> <a class="nav-link " href="#" tabindex="-1" aria-disabled="true" routerLink="/generos">Generos</a></div>
+       </li>
+      <li class="nav-item">
+       <div class="cl"> <a class="nav-link " href="#" tabindex="-1" aria-disabled="true" routerLink="/contacto" >Opinion</a></div>
+      </li>
+      <li class="nav-item">
+          <div class="cl"> <a class="nav-link " href="#" tabindex="-1" aria-disabled="true" routerLink="/conocenos" >Conocenos</a></div>
+         </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-danger my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
 </nav>
-<app-alumnos></app-alumnos>
+<br>
+<br>
+<router-outlet></router-outlet>
+<br>
+<footer class="br">
+  <div class="container final">
+  <div class="col" >
+    <div class="row ">
+      RE-MOV &copy;
+    </div>
+      <div class=" col-12 text-center">
+     <h1>contactanos</h1>
+        <ul class="list-unstyled quick-links">
+          <li>Home</li>
+          <li>About</li>
+          <li>FAQ</li>
+        </ul>
+      </div>
+  </div>
+</div>
+</footer>
