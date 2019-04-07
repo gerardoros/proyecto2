@@ -20,6 +20,8 @@ import { DescripcionComponent } from './components/descripcion/descripcion.compo
 import { EjemplosComponent } from './components/ejemplos/ejemplos.component';
 import { GenerosComponent } from './components/generos/generos.component';
 import { ConocenosComponent } from './components/conocenos/conocenos.component';
+import { OpinionListComponent } from './components/contacto/opinion-list/opinion-list.component';
+import { OpinionComponent } from './components/contacto/opinion/opinion.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { ConocenosComponent } from './components/conocenos/conocenos.component';
     DescripcionComponent,
     EjemplosComponent,
     GenerosComponent,
-    ConocenosComponent
+    ConocenosComponent,
+    OpinionListComponent,
+    OpinionComponent
   ],
   imports: [
     BrowserModule,
