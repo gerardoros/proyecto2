@@ -1,3 +1,26 @@
-<p>
-  opinion works!
-</p>
+<div class="card mt-5">
+  <div class="card-body">
+<form #opinionForm="ngForm" (ngSubmit)="onSubmit(opinionForm)">
+<div class="form-group">
+  <input type="text" class="form-control" name="nombre" #nombre="ngModel" [(ngModel)]="opinionService.selectedOpinion.nombre" placeholder="ingresa tu nombre"> 
+</div>
+<div class="form-group">
+  <input type="text" class="form-control" name="apellido" #apellidos="ngModel" [(ngModel)]="opinionService.selectedOpinion.apellidos" placeholder="ingresa tus apellidos"> 
+</div>
+<div class="form-group">
+  <input type="text" class="form-control" name="puntuacion" #puntuacion="ngModel" [(ngModel)]="opinionService.selectedOpinion.puntuacion" placeholder="ingresa un numero del 1 al 10"> 
+</div>
+<div class="form-group">
+  <input type="text" class="form-control" name="opinions" #opinions="ngModel" [(ngModel)]="opinionService.selectedOpinion.opinions" placeholder="ingresa tu opinion"> 
+</div>
+<div class="form-group">
+ <button class="btn btn-primary" type="submit">
+   <li class="fas fa-plus-circle">envia opinion</li> 
+ </button>
+<button class="btn btn-secondary" type="reset">
+  <li class="fas fa-sync-alt">reset</li> 
+</button>
+</div>
+</form>    
+  </div>
+</div>

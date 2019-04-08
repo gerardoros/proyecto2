@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import{ AlumnoService } from '../../../services/alumno.service';
 import{NgForm} from '@angular/forms'
-import { Alumno } from 'src/app/models/alumno';
+import { Alumno } from "src/app/models/alumno";
 @Component({
   selector: 'app-alumno',
   templateUrl: './alumno.component.html',
