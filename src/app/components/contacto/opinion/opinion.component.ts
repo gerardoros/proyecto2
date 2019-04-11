@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {OpinionService} from '../../../services/opinion.service';
-import { NgForm } from '@angular/forms'
+import { NgForm } from '@angular/forms';
 import{Opinion} from '../../../models/opinion';
 @Component({
   selector: 'app-opinion',
@@ -14,13 +14,14 @@ export class OpinionComponent implements OnInit {
     this.opinionService.getOpiniones();
     this.resetForm();
   }
+
   onSubmit(opinionForm: NgForm)
   {
     if(opinionForm.value.$key == null)
-    this.opinionService.insertOpinion(opinionForm.value);
-    else 
+    this.opinionService.insertOpinion(opinionForm.value)
+    else
     this.opinionService.updateOpinion(opinionForm.value);
-    
+
     this.resetForm(opinionForm);
   }
 resetForm(opinionForm?: NgForm)

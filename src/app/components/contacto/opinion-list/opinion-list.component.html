@@ -1,3 +1,30 @@
-<p>
-  opinion-list works!
-</p>
+
+<div class="card mt-4">
+  <div class="card-body">
+    <h6 class="text-center"> Lista de opiniones</h6>
+  </div>  
+  <table class="table table-sm table-hover">
+<tbody>
+    <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Puntuacion</th>
+        <th>Opinion</th>
+      </tr>
+   <tr *ngFor="let opinion of opinionList">
+<td>{{opinion.nom}}</td>
+<td>{{opinion.ape}}</td>
+<td>{{opinion.pun}}</td>
+<td>{{opinion.opi}}</td>
+<td>
+  <a class="btn btn-secondary text-white" (click)="onEdit(opinion)">
+    <i class="far fa-edit"></i>
+  </a>
+  <a class="btn btn-danger text-white" (click)="onDelete(opinion.$key)"> 
+      <i class="fas fa-trash-alt"></i>
+  </a>
+</td>
+   </tr>
+</tbody>
+  </table>
+</div>

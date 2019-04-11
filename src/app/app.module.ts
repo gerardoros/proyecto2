@@ -6,8 +6,8 @@ import { AppComponent } from './app.component';
 
 //firebase
 import {  AngularFireDatabaseModule } from 'angularfire2/database';
-import { AngularFireModule } from '@angular/fire';
-import { environment } from 'src/environments/environment';
+import { AngularFireModule } from 'angularfire2';
+import { environment } from '../environments/environment';
 //formularios
 import { FormsModule} from '@angular/forms';
 import { AlumnosComponent } from './components/alumnos/alumnos.component';
@@ -24,6 +24,7 @@ import { OpinionListComponent } from './components/contacto/opinion-list/opinion
 import { OpinionComponent } from './components/contacto/opinion/opinion.component';
 //services
 import {OpinionService} from './services/opinion.service';
+
 @NgModule({
   declarations: [
     AppComponent,

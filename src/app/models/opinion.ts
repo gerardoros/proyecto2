@@ -1,7 +1,7 @@
 export class Opinion {
-    $key: string;
-    nombre: string;
-    apellidos: string;
-    puntuacion: number;
-    opinions: string;
+     $key: string;
+    nom: string;
+    ape: string;
+    pun: number;
+    opi: string;
 }
